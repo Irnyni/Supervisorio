@@ -59,7 +59,7 @@ min-height: 100vh;
 
   
 }
-.mapa{width: 100%;
-height:1000px
+.mapa{width: 1600px;
+height:800px
 }
 </style>

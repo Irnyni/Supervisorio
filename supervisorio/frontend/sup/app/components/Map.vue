@@ -26,14 +26,15 @@
 }
 </style>
 <script setup>
+
 import { ref } from 'vue';
 import { LMap, LTileLayer, LMarker } from "@vue-leaflet/vue-leaflet";
-import "leaflet/dist/leaflet.css";
-const zoom = ref(13);
-const center = ref([-23.5505, -46.6333]); 
+import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+const zoom = ref(20);
+const center = ref([-21.5505, -46.6323]); 
 const url = ref('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 const attribution = ref('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
-const markerLatLng = ref([-23.5505, -46.6333]); 
+const markerLatLng = ref([-20.5505, -46.6333]); 
 </script>
 
 
