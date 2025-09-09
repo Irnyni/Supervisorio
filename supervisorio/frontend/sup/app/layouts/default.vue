@@ -4,6 +4,8 @@
     
   
       <slot></slot>
+ 
+      
 
     <Footer />
   </div>

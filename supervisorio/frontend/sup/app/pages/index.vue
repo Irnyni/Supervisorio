@@ -9,19 +9,16 @@
           
         </ul>
         </nav>
-    <div class="mapa">
 
-      
+    <div class="mapa">
+      <Map/>
+    
     </div>
       </div>
 </template>
 
-<script>
-export default {
-  setup () {
-    return {}
-  }
-}
+<script setup>
+
 </script>
 
 <style >
@@ -61,5 +58,8 @@ min-height: 100vh;
     box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.9);
 
   
+}
+.mapa{width: 100%;
+height:1000px
 }
 </style>
