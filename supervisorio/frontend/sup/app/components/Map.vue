@@ -1,4 +1,7 @@
 <template>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
   <div class="map-container">
     <l-map
       :zoom="zoom"
@@ -28,13 +31,14 @@
 <script setup>
 
 import { ref } from 'vue';
-import { LMap, LTileLayer, LMarker } from "@vue-leaflet/vue-leaflet";
-import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
-const zoom = ref(20);
-const center = ref([-21.5505, -46.6323]); 
+import { LMap, LTileLayer, LMarker ,LPopup} from "@vue-leaflet/vue-leaflet";
+
+import "leaflet/dist/leaflet.css";
+const zoom = ref(13);
+const center = ref([-23.5505, -46.6333]); 
 const url = ref('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 const attribution = ref('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
-const markerLatLng = ref([-20.5505, -46.6333]); 
+const markerLatLng = ref([-23.5505, -46.6333]); 
 </script>
 
 
